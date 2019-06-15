@@ -1,0 +1,17 @@
+.el-container {
+  .el-main {
+    background: #f7faff;
+  }
+}
+.app-container {
+  .el-input__inner {
+    color: #a4ceff !important;
+    background-color: #f7faff;
+    border-radius: 100px;
+    border: 1px solid #f7faff;
+  }
+  .el-button {
+    background-image: linear-gradient(90deg, #47afff 0%, #2d77ff 100%);
+    border-radius: 18px;
+  }
+}

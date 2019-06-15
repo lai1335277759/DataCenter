@@ -1,0 +1,225 @@
+<template>
+  <div class="home-warp">
+    <div class="home-header">
+      <div class="home-header-top">
+        <div class="header-top-left">
+          <i></i>
+          <span>罗平县医共体信息平台</span>
+        </div>
+        <div class="header-top-right">
+          <div class="top-username">
+            <i class="username-avatar"></i>
+            <div class="title">
+              <span class="username-title1">欢迎您,系统管理员</span>
+              <span class="username-title2">罗平县人民医院</span>
+            </div>
+          </div>
+          <div class="logout">
+            <span>退出登录</span>
+          </div>
+        </div>
+      </div>
+      <div class="home-header-datacenter">
+        <span class="datacenter-title1">数据中心</span>
+        <span class="datacenter-title2">医疗数据中心平台,更好研究人体疾病和评估人体健康提供信息</span>
+      </div>
+    </div>
+    <ul class="home-main">
+      <li class="home-main-item" v-for="(item, index) in homeDate" :key="index">
+        <img :src="item.image" />
+        <div class="item-title">
+          <span class="item-title1">{{item.title1}}</span>
+          <span class="item-title2">{{item.title2}}</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</template>
+<script>
+import {mapState} from 'vuex'
+  export default {
+    mounted () {
+      this.$store.dispatch('getHomeDate')
+    },
+    computed: {
+      ...mapState({
+        homeDate: state => state.home.homeDate
+      })
+    }
+  }
+</script>
+<style lang="scss" scoped>
+  .home-warp {
+    position: relative;
+    .home-header {
+      width: 1920px;
+      height: 375px;
+      background: url(../../assets/home/home.png) no-repeat;
+      border-radius: 0 0 0 80px;
+      overflow: hidden;
+      text-align: center;
+      .home-header-top {
+        width: 1800px;
+        height: 37px;
+        margin: 21px 60px 0 60px;
+        .header-top-left {
+          float: left;
+          i {
+            width: 31px;
+            height: 31px;
+            background-color: #ffffff;
+            background: url("../../assets/home/logo.png");
+            vertical-align: middle;
+            margin-right: 10px;
+          }
+          span {
+            width: 319px;
+            height: 29px;
+            font-family: SourceHanSansSC-Medium;
+            font-size: 30px;
+            font-weight: bold;
+            font-stretch: normal;
+            letter-spacing: 2px;
+            color: #ffffff;
+            vertical-align: middle;
+          }
+        }
+        .header-top-right {
+          float: right;
+          width: 322px;
+          display: flex;
+          justify-content: space-between;
+          .top-username {
+            display: flex;
+            width: 170px;
+            height: 37px;
+            .title {
+              font-family: MicrosoftYaHei;
+              color: #ffffff;
+              font-size: 14px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              margin-left: 8px;
+              text-align: start;
+            }
+            .username-avatar {
+              width: 36px;
+              height: 36px;
+              background-color: #ffffff;
+              background: url("../../assets/home/userAvatar.png");
+            }
+            .username-title1 {
+              width: 126px;
+              height: 13px;
+            }
+            .username-title2 {
+              width: 99px;
+              height: 12px;
+            }
+          }
+          .logout {
+            position: relative;
+            width: 92px;
+            height: 36px;
+            background-image: linear-gradient(90deg,
+              #ff9000 0%,
+              #ffc600 100%);
+            border-radius: 18px;
+            text-align: center;
+            &::after {
+              position: absolute;
+              content: '';
+              left: -31px;
+              width: 1px;
+              height: 34px;
+              background-color: #ffffff;
+              opacity: 0.3;
+            }
+            span {
+              width: 65px;
+              height: 15px;
+              font-family: MicrosoftYaHei;
+              font-size: 16px;
+              font-weight: normal;
+              font-stretch: normal;
+              letter-spacing: 0px;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+      .home-header-datacenter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 36px;
+        .datacenter-title1 {
+          width: 136px;
+          height: 31px;
+          font-family: MicrosoftYaHei-Bold;
+          font-size: 32px;
+          letter-spacing: 2px;
+          color: #ffffff;
+        }
+        .datacenter-title2 {
+          width: 528px;
+          height: 19px;
+          font-family: MicrosoftYaHei;
+          font-size: 18px;
+          letter-spacing: 1px;
+          color: #ffffff;
+          margin-top: 22px;
+        }
+      }
+    }
+    .home-main {
+      position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: space-between;
+      top: 231px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1451px;
+      height: 595px;
+      .home-main-item{
+        width: 222px;
+        height: 275px;
+        background-color: #ffffff;
+        box-shadow: 0px 3px 8px 0px
+        rgba(109, 139, 255, 0.08);
+        border-radius: 10px;
+        padding: 20px;
+        img{
+          width: 76px;
+          height: 76px;
+          background-color: #f4f9ff;
+          margin: 13px 0 28px 0px;
+        }
+        .item-title{
+          display: flex;
+          flex-direction: column;
+          font-family: MicrosoftYaHei;
+          .item-title1{
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 1px;
+            color: #333333;
+            margin-bottom: 17px;
+          }
+          .item-title2{
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 20px;
+            letter-spacing: 0px;
+            color: #888888;
+          }
+        }
+      }
+    }
+  }
+</style>

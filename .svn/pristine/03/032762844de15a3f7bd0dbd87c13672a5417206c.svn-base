@@ -1,0 +1,25 @@
+<template>
+  <div>
+    <el-breadcrumb separator="/">
+      <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
+      <el-breadcrumb-item :to="{ path: '/'}">活动管理</el-breadcrumb-item>
+    </el-breadcrumb>
+    <TimeAndSearch />
+    <Particulars />
+  </div>
+</template>
+
+<script>
+  import TimeAndSearch from './TimeAndSearch'
+  import Particulars from './particulars'
+  export default {
+    components: {
+      TimeAndSearch,
+      Particulars
+    }
+  }
+</script>
+
+<style  lang="scss" scoped>
+
+</style>

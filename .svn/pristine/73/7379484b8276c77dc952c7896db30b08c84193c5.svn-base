@@ -1,0 +1,30 @@
+@charset "utf-8";
+//一行显示。。。。;
+@mixin ellipsis{
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+}
+// 强制折行;
+@mixin break-word{
+  word-break:break-all; /*支持IE，chrome，FF不支持*/
+  　　word-wrap:break-word; /*支持IE，chrome，FF*/
+}
+@mixin scrollBar {
+  &::-webkit-scrollbar-track-piece {
+    background: transparent;
+  }
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #dedede;
+    border-radius: 20px;
+  }
+}
+@mixin flex-space{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+

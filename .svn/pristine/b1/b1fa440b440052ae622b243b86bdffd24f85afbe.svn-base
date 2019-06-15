@@ -1,0 +1,53 @@
+import layout from "@/views/layout";
+import column from "@/views/column";
+import Home from "../views/home";
+import ImageDate from "../components/dateCenter";
+export default [
+  {
+    path: "/",
+    redirect: "/login"
+  },
+  {
+    path: "/login",
+    name: "login",
+    meta: {
+      title: "Login - 登录"
+    },
+    component: () => import("@/views/login/index.vue")
+  },
+  {
+    path: "/imagedate",
+    component: ImageDate
+  },
+  {
+    path: "/home",
+    name: "home",
+    meta: {
+      title: "首页"
+    },
+    component: Home
+  },
+  {
+    path: "/column",
+    name: "column",
+    component: layout,
+    children: [
+      {
+        path: "/inspection",
+        name: "inspection",
+        redirect: "/inspection/index",
+        component: column,
+        children: [
+          {
+            path: "index",
+            name: "inspection-datacenter",
+            meta: {
+              title: "检验数据中心"
+            },
+            component: () => import("@/views/inspection/index.vue")
+          }
+        ]
+      }
+    ]
+  }
+];

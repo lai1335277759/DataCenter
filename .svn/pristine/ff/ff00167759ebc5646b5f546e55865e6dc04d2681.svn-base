@@ -1,0 +1,88 @@
+{
+  "homeDate": [
+    {
+      "url": "/emr",
+      "image": "/src/assets/home/home_sprites.png",
+      "title1": "电子病历数据",
+      "title2": "计算机化的病案系统或称基于计算机的病人记录",
+      "icon": "emr"
+    },
+    {
+      "url": "/physical",
+      "image": "/src/assets/home/home_sprites.png",
+      "title1": "体检数据",
+      "title2": "提取人体的材料进行微生物、血液、细胞等方面的检验数据",
+      "icon": "inspection"
+    },
+    {
+      "url": "/imagedate",
+      "image": "/src/assets/home/home_sprites.png",
+      "title1": "影像数据",
+      "title2": "对人体或人体某部分，以非侵入方式取得内部组织影像 ",
+      "icon": "pacs"
+    },
+    {
+      "url": "/ecg",
+      "image": "/src/assets/home/home_sprites.png",
+      "title1": "心电数据",
+      "title2": "心脏在每个周期中相继兴奋，伴随着生物电的变化记录数据",
+      "icon": "ecg"
+    },
+    {
+      "url": "/cardiocerebral",
+      "image": "/src/assets/home/home_sprites.png",
+      "title1": "心脑血管数据",
+      "title2": "计算机化的病案系统或称基于计算机的病人记录  ",
+      "icon": "cardiovascular"
+    },
+    {
+      "url": "/emergent",
+      "image": "/src/assets/home/home_sprites.png",
+      "title1": "急救急诊数据",
+      "title2": "计算机化的病案系统或称基于计算机的病人记录  ",
+      "icon": "emergency"
+    },
+    {
+      "url": "/dosage",
+      "image": "/src/assets/home/home_sprites.png",
+      "title1": "配液配药数据",
+      "title2": "计算机化的病案系统或称基于计算机的病人记录",
+      "icon": "dispensing"
+    },
+    {
+      "url": "/fitness",
+      "image": "/src/assets/home/home_sprites.png",
+      "title1": "健康档案数据",
+      "title2": "计算机化的病案系统或称基于计算机的病人记录",
+      "icon": "records"
+    },
+    {
+      "url": "/womenhealth",
+      "image": "/src/assets/home/home_sprites.png",
+      "title1": "妇幼保健数据",
+      "title2": "计算机化的病案系统或称基于计算机的病人记录",
+      "icon": "women"
+    },
+    {
+      "url": "/medical",
+      "image": "/src/assets/home/home_sprites.png",
+      "title1": "医疗机构数据",
+      "title2": "计算机化的病案系统或称基于计算机的病人记录",
+      "icon": "medical"
+    },
+    {
+      "url": "/medicalworkers ",
+      "image": "/src/assets/home/home_sprites.png",
+      "title1": "医护人员数据",
+      "title2": "计算机化的病案系统或称基于计算机的病人记录",
+      "icon": "staff"
+    },
+    {
+      "url": "/datedictionaries",
+      "image": "/src/assets/home/home_sprites.png",
+      "title1": "数据字典库",
+      "title2": "计算机化的病案系统或称基于计算机的病人记录",
+      "icon": "dictionary"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+import layout from "@/views/layout";
+import column from "@/views/column";
+export default [
+  {
+    path: "/login",
+    name: "login",
+    meta: {
+      title: "Login - 登录"
+    },
+    component: () => import("@/views/login/index.vue")
+  },
+  {
+    path: "/index",
+    name: "index",
+    meta: {
+      title: "首页"
+    },
+    component: () => import("@/views/index/index.vue")
+  },
+  {
+    path: "/column",
+    name: "column",
+    component: layout,
+    children: [
+      {
+        path: "/inspection",
+        name: "inspection",
+        redirect: "/inspection/index",
+        component: column,
+        children: [
+          {
+            path: "index",
+            name: "inspection-datacenter",
+            meta: {
+              title: "检验数据中心"
+            },
+            component: () => import("@/views/inspection/index.vue")
+          }
+        ]
+      }
+    ]
+  }
+];

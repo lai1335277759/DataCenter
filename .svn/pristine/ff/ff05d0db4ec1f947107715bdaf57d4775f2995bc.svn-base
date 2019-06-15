@@ -1,0 +1,51 @@
+<svg id="组_3" data-name="组 3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="127.998" height="117.62" viewBox="0 0 37 34">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #585858;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1011" y1="300" x2="1040" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff9000"/>
+      <stop offset="1" stop-color="#ffc600"/>
+    </linearGradient>
+  </defs>
+  <path id="形状_17" data-name="形状 17" class="cls-1" d="M1040.41,286h-5.4a1.182,1.182,0,1,0,0,2.363h5.4a1.193,1.193,0,0,1,1.2,1.182v22.941a1.193,1.193,0,0,1-1.2,1.182h-29.82a1.193,1.193,0,0,1-1.2-1.182V289.545a1.193,1.193,0,0,1,1.2-1.182h18.64a1.182,1.182,0,1,0,0-2.363h-18.64a3.57,3.57,0,0,0-3.59,3.545v22.941a3.569,3.569,0,0,0,3.59,3.545h5.52v2.784a1.2,1.2,0,0,0,2.4,0v-2.784l14.57,0v2.786a1.2,1.2,0,0,0,2.4,0v-2.787h4.93a3.57,3.57,0,0,0,3.59-3.545V289.545A3.57,3.57,0,0,0,1040.41,286Z" transform="translate(-1007 -286)"/>
+  <path id="形状_18" data-name="形状 18" class="cls-2" d="M1021.86,293.94a1.6,1.6,0,0,0-2.87-.082l-2.72,5.365h-3.69a1.557,1.557,0,1,0,0,3.114h4.67a1.587,1.587,0,0,0,1.41-.862l1.64-3.225,3.39,7.809a1.6,1.6,0,0,0,2.77.251l2.7-3.977h9.26a1.557,1.557,0,1,0,0-3.114h-10.11a1.61,1.61,0,0,0-1.32.689l-1.54,2.285Zm0,0" transform="translate(-1007 -286)"/>
+</svg>

@@ -1,0 +1,194 @@
+import layout from "@/views/layout";
+import Home from "../views/home"; // 首页
+// import Emr from "../views/home/emr"; // 电子病历数据
+// import Physical from "../views/home/physical"; // 体检数据
+// import ImageDate from "../views/home/imagedate"; // 影像数据
+// import Ecg from "../views/home/ecg"; // 心电数据
+// import Cardiocerebral from "../views/home/cardiocerebral"; // 心脑血管数据
+// import Emergent from "../views/home/emergent"; // 急救急诊数据
+// import Dosage from "../views/home/dosage"; // 配液配药数据
+// import Fitness from "../views/home/fitness"; // 健康档案数据
+// import womenHealth from "../views/home/womenhealth"; // 妇幼保健数据
+// import Medical from "../views/home/medical"; // 医疗机构数据
+// import MedicalWorkers from "../views/home/medicalworkers"; // 医护人员数据
+// import DateDictionaries from "../views/home/datedictionaries"; // 数据字典库
+
+export default [
+  {
+    path: "/",
+    redirect: "/login"
+  },
+  {
+    path: "/login",
+    meta: { title: "Login - 登录" },
+    component: () => import("@/views/login/index.vue")
+  },
+  {
+    path: "/home",
+    meta: { title: "首页" },
+    component: Home
+  },
+  // {
+  //   path: "/emr",
+  //   meta: {title: "电子病历数据"},
+  //   component: Emr
+  // },
+  // {
+  //   path: "/physical",
+  //   meta: {title: "体检数据"},
+  //   component: Physical
+  // },
+  // {
+  //   path: "/imagedate",
+  //   meta: {title: "影像数据"},
+  //   component: ImageDate
+  // },
+  // {
+  //   path: "/ecg",
+  //   meta: {title: "心电数据"},
+  //   component: Ecg
+  // },
+  // {
+  //   path: "/cardiocerebral",
+  //   meta: {title: "心脑血管数据"},
+  //   component: Cardiocerebral
+  // },
+  // {
+  //   path: "/emergent",
+  //   meta: {title: "急救急诊数据"},
+  //   component: Emergent
+  // },
+  // {
+  //   path: "/dosage",
+  //   meta: {title: "配液配药数据"},
+  //   component: Dosage
+  // },
+  // {
+  //   path: "/fitness",
+  //   meta: {title: "健康档案数据"},
+  //   component: Fitness
+  // },
+  // {
+  //   path: "/womenhealth",
+  //   meta: {title: "妇幼保健数据"},
+  //   component: womenHealth
+  // },
+  // {
+  //   path: "/medical",
+  //   meta: {title: "医疗机构数据"},
+  //   component: Medical
+  // },
+  // {
+  //   path: "/medicalworkers",
+  //   meta: {title: "医护人员数据"},
+  //   component: MedicalWorkers
+  // },
+  // {
+  //   path: "/datedictionaries",
+  //   meta: {title: "数据字典库"},
+  //   component: DateDictionaries
+  // },
+  {
+    path: "/column",
+    name: "column",
+    component: layout,
+    children: [
+      {
+        path: "/emr",
+        name: "emr",
+        meta: {
+          title: "电子病历数据中心"
+        },
+        component: () => import("@/views/column/index.vue")
+      },
+      {
+        path: "/physical",
+        name: "physical",
+        meta: {
+          title: "检验数据中心"
+        },
+        component: () => import("@/views/column/index.vue")
+      },
+      {
+        path: "/pacs",
+        name: "pacs",
+        meta: {
+          title: "影像数据中心"
+        },
+        component: () => import("@/views/column/index.vue")
+      },
+      {
+        path: "/ecg",
+        name: "ecg",
+        meta: {
+          title: "心电数据中心"
+        },
+        component: () => import("@/views/column/index.vue")
+      },
+      {
+        path: "/cardiocerebral",
+        name: "cardiocerebral",
+        meta: {
+          title: "心脑血管数据中心"
+        },
+        component: () => import("@/views/column/index.vue")
+      },
+      {
+        path: "/emergency",
+        name: "emergency",
+        meta: {
+          title: "急救急诊数据中心"
+        },
+        component: () => import("@/views/column/index.vue")
+      },
+      {
+        path: "/dispensing",
+        name: "dispensing",
+        meta: {
+          title: "配液配药数据中心"
+        },
+        component: () => import("@/views/column/index.vue")
+      },
+      {
+        path: "/records",
+        name: "records",
+        meta: {
+          title: "健康档案数据中心"
+        },
+        component: () => import("@/views/column/index.vue")
+      },
+      {
+        path: "/womenHealth",
+        name: "womenHealth",
+        meta: {
+          title: "妇幼保健数据中心"
+        },
+        component: () => import("@/views/column/index.vue")
+      },
+      {
+        path: "/medical",
+        name: "medical",
+        meta: {
+          title: "医疗机构数据中心"
+        },
+        component: () => import("@/views/column/index.vue")
+      },
+      {
+        path: "/medicalWorkers",
+        name: "medicalWorkers",
+        meta: {
+          title: "医护人员数据中心"
+        },
+        component: () => import("@/views/column/index.vue")
+      },
+      {
+        path: "/dictionary",
+        name: "dictionary",
+        meta: {
+          title: "数据字典库中心"
+        },
+        component: () => import("@/views/column/index.vue")
+      }
+    ]
+  }
+];

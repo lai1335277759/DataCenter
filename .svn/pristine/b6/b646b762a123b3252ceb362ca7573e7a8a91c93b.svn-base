@@ -1,0 +1,24 @@
+{
+  "meunList": [
+    {
+      "icon": "pacs",
+      "menuName": "影像数据",
+      "menuUrl": "/pacs/index"
+    },
+    {
+      "icon": "inspection",
+      "menuName": "检验数据",
+      "menuUrl": "/inspection/index"
+    },
+    {
+      "icon": "ecg",
+      "menuName": "心电数据",
+      "menuUrl": "/ecg/index"
+    },
+    {
+      "icon": "emr",
+      "menuName": "电子病历数据",
+      "menuUrl": "/emr/index"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+<template>
+  <div class="app-container">
+    <sidemenu></sidemenu>
+    <div class="app-content">
+        <router-view></router-view>
+    </div>
+  </div>
+</template>
+
+<script>
+import sidemenu from "./sideMenu.vue";
+import {} from "@/common/getHttp";
+export default {
+  data() {
+    return {
+    };
+  },
+  components: { sidemenu },
+  created() {
+  },
+  methods: {
+  }
+};
+</script>
+
+<style lang="scss" scope>
+@import "@/styles/column.scss";
+
+.openSidebar{
+ .app-content {
+    margin-left: 309px;
+    width: calc(100% - 309px);
+  }
+}
+.hideSidebar{
+    .app-content {
+    margin-left: 175px;
+    width: calc(100% - 175px);
+  }
+}
+</style>

@@ -1,0 +1,52 @@
+<svg id="组_88" data-name="组 88" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="141.278" height="141.278" viewBox="0 0 117 117">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #6fbaff;
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+    <filter id="filter" x="0" y="0" width="117" height="117" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="6" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="5"/>
+      <feFlood result="flood" flood-color="#4699fe" flood-opacity="0.1"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <circle id="椭圆_1" data-name="椭圆 1" class="cls-1" cx="58" cy="52" r="34"/>
+  <path id="形状_44" data-name="形状 44" class="cls-2" d="M134.949,215.39c-1.082-1.922-8.848-4.35-12.191-6.778s-1.081-4.552,0-5.665,1.966-2.732,4.424-6.778,0-4.552,0-4.552c-0.2-8.3-1.474-11.431-4.424-14.567a6.082,6.082,0,0,0-3.539-1.518v-0.708s-10.323-.91-13.174,2.226-4.227,6.271-4.424,14.668c0,0-2.458.405,0,4.552,2.458,4.047,3.343,5.665,4.424,6.778s3.343,3.237,0,5.665-11.109,4.856-12.191,6.778a32.914,32.914,0,0,0-2.458,7.081,34.1,34.1,0,0,0,25.758,9.408s12-.4,20.449-8.4a31.472,31.472,0,0,0-2.654-8.194h0Zm0,0" transform="translate(-56 -145)"/>
+</svg>
