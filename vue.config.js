@@ -48,6 +48,16 @@ module.exports = {
   productionSourceMap: false,
 
   devServer: {
+    proxy: {
+      '/api': {
+        target: 'http://192.168.1.221:8888',
+        ws: true,
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': ''
+        }
+      },
+    }
     // proxy: 'http://192.168.1.107:8080/'
   },
 

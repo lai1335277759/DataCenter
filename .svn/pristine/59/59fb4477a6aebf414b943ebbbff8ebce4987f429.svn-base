@@ -3,31 +3,31 @@
     <Header/>
     <Content>
       <div class="image" slot="image">
-        <div @click="isPopup=true"><img src="" alt=""></div>
+        <div @click="popup=true"><img src="" alt=""></div>
         <div><img src="" alt=""></div>
       </div>
     </Content>
     <Footer/>
-    <div class="mask" v-if="isPopup">
-      <div class="isPopup">
+    <div class="mask" v-if="popup">
+      <div class="popup">
         <div><img src="" alt=""></div>
       </div>
       <div class="btn">
         <span @click="">上一张</span>
         <span @click="">下一张</span>
       </div>
-      <span @click="isPopup=false">X</span>
+      <span @click="popup=false">X</span>
     </div>
   </div>
 </template>
 <script>
   import Header from '../../../../components/header'
   import Footer from '../../../../components/footer'
-  import Content from '../../../../components/particularsContent/pacsContent'
+  import Content from '../../../../components/particularsContent/content'
   export default {
     data () {
       return {
-        isPopup: false // 是否显示大图
+        popup: true
       }
     },
     components: {
@@ -39,7 +39,6 @@
 </script>
 <style lang="scss" scoped>
   .particulars-warp {
-    height: 1207px;
     .image {
       display: flex;
       justify-content: space-between;
@@ -48,15 +47,14 @@
       }
     }
     .mask {
-      position: fixed;
+      position: absolute;
       left: 0;
       top: 0;
       bottom: 0;
       right: 0;
-      z-index: 3000;
       background: rgba(0, 0, 0, .5);
       text-align: center;
-      .isPopup {
+      .popup {
         margin: 104px auto;
         width: 1250px;
         height: 697px;

@@ -23,7 +23,7 @@
 <script>
   import Header from '../../../../components/header'
   import Footer from '../../../../components/footer'
-  import Content from '../../../../components/particularsContent/pacsContent'
+  import Content from '../../../../components/particularsContent/content'
   export default {
     data () {
       return {
@@ -39,7 +39,6 @@
 </script>
 <style lang="scss" scoped>
   .particulars-warp {
-    height: 1207px;
     .image {
       display: flex;
       justify-content: space-between;
@@ -48,7 +47,7 @@
       }
     }
     .mask {
-      position: fixed;
+      position: absolute;
       left: 0;
       top: 0;
       bottom: 0;

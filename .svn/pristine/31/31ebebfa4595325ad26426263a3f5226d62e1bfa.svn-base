@@ -170,13 +170,9 @@ export default [
       {
         path: "/particulars",
         name: "particulars",
-        meta: {title: "数据中心详情"},
+        meta: {title: "影像数据中心详情"},
         component: () => import("@/views/home/particulars/index.vue"),
         children: [
-          {
-            path: '/particulars',
-            redirect: '/particulars/ultraphonicReport'
-          },
           {
             path: "/particulars/ultraphonicReport",
             name: "ultraphonicReport",
@@ -219,84 +215,7 @@ export default [
             meta: {title: "CT检查报告单"},
             component: () => import("@/views/home/pacs/CTScan/index.vue")
           },
-          {
-            path: "/particulars/arterialBlood",
-            name: "arterialBlood",
-            meta: {title: "动脉血"},
-            component: () => import("@/views/home/physical/arterialBlood/index.vue")
-          },
-          {
-            path: "/particulars/bloodFat",
-            name: "bloodFat",
-            meta: {title: "血脂"},
-            component: () => import("@/views/home/physical/bloodFat/index.vue")
-          },
-          {
-            path: "/particulars/pharyngealSwab",
-            name: "pharyngealSwab",
-            meta: {title: "咽拭子"},
-            component: () => import("@/views/home/physical/pharyngealSwab/index.vue")
-          },
-          {
-            path: "/particulars/immune",
-            name: "immune",
-            meta: {title: "咽拭子"},
-            component: () => import("@/views/home/physical/immune/index.vue")
-          },
-          {
-            path: "/particulars/wholeBlood",
-            name: "wholeBlood",
-            meta: {title: "全血"},
-            component: () => import("@/views/home/physical/wholeBlood/index.vue")
-          },
-          {
-            path: "/particulars/piss",
-            name: "piss",
-            meta: {title: "尿"},
-            component: () => import("@/views/home/physical/piss/index.vue")
-          },
-          {
-            path: "/particulars/eugenicsTen",
-            name: "eugenicsTen",
-            meta: {title: "优生十项"},
-            component: () => import("@/views/home/physical/eugenicsTen/index.vue")
-          },
-          {
-            path: "/particulars/pissRule",
-            name: "pissRule",
-            meta: {title: "尿常规"},
-            component: () => import("@/views/home/physical/pissRule/index.vue")
-          },
-          {
-            path: "/particulars/leucorrhea",
-            name: "leucorrhea",
-            meta: {title: "白带"},
-            component: () => import("@/views/home/physical/leucorrhea/index.vue")
-          },
-          {
-            path: "/particulars/allergen",
-            name: "allergy",
-            meta: {title: "过敏源"},
-            component: () => import("@/views/home/physical/allergen/index.vue")
-          },
-          {
-            path: "/particulars/hpv",
-            name: "hpv",
-            meta: {title: "HPV"},
-            component: () => import("@/views/home/physical/HPV/index.vue")
-          },
-          {
-            path: "/particulars/fiveInfertility",
-            name: "FiveInfertility",
-            meta: {title: "不孕不育五项"},
-            component: () => import("@/views/home/physical/fiveInfertility/index.vue")
-          },
-          {
-            path: "/particulars/cpeptide",
-            name: "Cpeptide",
-            meta: {title: "C肽"},
-            component: () => import("@/views/home/physical/Cpeptide/index.vue")
-          }
+
         ]
       }
     ]

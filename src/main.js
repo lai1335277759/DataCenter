@@ -8,7 +8,7 @@ import "@/styles/fonts/iconfont.css";
 import "./styles/base.scss";
 import Util from "./common/util";
 import "./icons"; // icon
-import './mock/mock-server'
+import "./mock/mock-server"
 // import DataCenter from "./components/dataCenter"
 
 // 注册全局组件
