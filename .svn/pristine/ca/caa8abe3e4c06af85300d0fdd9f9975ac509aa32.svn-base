@@ -1,25 +1,14 @@
 <template>
   <div class="warp">
-    <SidebarNav :PatientInfoDetails="PatientInfoDetails"/>
-    <router-view :PatientInfoDetails="PatientInfoDetails"></router-view>
+    <SidebarNav/>
+    <router-view></router-view>
   </div>
 </template>
 <script>
   import SidebarNav from '../../../components/sidebarNav'
-  import {mapState} from 'vuex'
   export default {
     mounted () {
-      this.$store.dispatch('getTestInfoDetail',() => {
-        this.$nextTick(() => {
-          this.$store.dispatch('getPatientInfoDetail')
-        })
-      })
-    },
-    computed: {
-      ...mapState({
-        TestInfoDetail: state => state.particulars.TestInfoDetail,
-        PatientInfoDetails: state => state.particulars.PatientInfoDetails
-      })
+      this.$store.dispatch('getPatientInfoDetail')
     },
     components: {
       SidebarNav

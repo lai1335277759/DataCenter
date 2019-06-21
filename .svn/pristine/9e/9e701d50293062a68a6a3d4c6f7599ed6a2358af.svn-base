@@ -8,14 +8,13 @@
           </span>
           <div class="user-details">
             <div class="userinfo">
-              <span class="user-name">{{PatientInfoDetails.realName}}</span>
+              <span class="user-name">陈姗姗</span>
               <i class="gender">
-                <svg-icon icon-class="male" class="man" v-if="PatientInfoDetails.gender === 1"/>
-                <svg-icon icon-class="male" class="woman" v-else/>
+                <svg-icon icon-class="male" class="man"/>
               </i>
-              <span class="user-age">{{PatientInfoDetails.age}}</span>
+              <span class="user-age">28岁</span>
             </div>
-            <span>{{PatientInfoDetails.admissionNumber}}</span>
+            <span>123456789111</span>
           </div>
         </div>
         <div class="type">电子病历</div>
@@ -166,96 +165,95 @@
           </span>
           <div class="user-details">
             <div class="userinfo">
-              <span class="user-name">{{PatientInfoDetails.realName}}</span>
+              <span class="user-name">陈姗姗</span>
               <i class="gender">
-                <svg-icon icon-class="male" class="man" v-if="PatientInfoDetails.gender === 1"/>
-                <svg-icon icon-class="male" class="woman" v-else/>
+                <svg-icon icon-class="male" class="man"/>
               </i>
-              <span class="user-age">{{PatientInfoDetails.age}}</span>
+              <span class="user-age">28岁</span>
             </div>
-            <span>{{PatientInfoDetails.admissionNumber}}</span>
+            <span>123456789111</span>
           </div>
         </div>
         <div class="info">
           <div class="title">
             <span>出生日期: </span>
-            <span>{{PatientInfoDetails.birthdayStr}}</span>
+            <span>1975年4月17日</span>
           </div>
           <div class="title">
             <span>民&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;族: </span>
-            <span>{{PatientInfoDetails.nation}}</span>
+            <span>汉</span>
           </div>
           <div class="title">
             <span>国&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;籍: </span>
-            <span>{{PatientInfoDetails.nationality}}</span>
+            <span>中国</span>
           </div>
           <div class="title">
             <span>婚姻状况: </span>
-            <span>{{PatientInfoDetails.isMarried}}</span>
+            <span>未婚</span>
           </div>
           <div class="title">
             <span>职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业: </span>
-            <span>{{PatientInfoDetails.job}}</span>
+            <span>农民</span>
           </div>
           <div class="title">
             <span>学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;历: </span>
-            <span>{{PatientInfoDetails.education}}</span>
+            <span>本科</span>
           </div>
           <div class="title">
             <span>联系方式: </span>
-            <span>{{PatientInfoDetails.phone}}</span>
+            <span>13612829291</span>
           </div>
           <div class="title">
             <span>医保卡号: </span>
-            <span>{{PatientInfoDetails.medicareCardno}}</span>
+            <span>16504625656848640</span>
           </div>
           <div class="title">
             <span>血&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型: </span>
-            <span>{{PatientInfoDetails.bloodType}}</span>
+            <span>O型</span>
           </div>
           <div class="title">
             <span>出&nbsp;&nbsp;生&nbsp;&nbsp;地: </span>
-            <span>{{PatientInfoDetails.birthPlace}}</span>
+            <span>云南省曲靖市罗平县罗雄街道名称</span>
           </div>
           <div class="title">
             <span>户籍地址: </span>
-            <span>{{PatientInfoDetails.domicileAddress}}</span>
+            <span>云南省曲靖市罗平县罗雄街道名称</span>
           </div>
           <div class="title">
             <span>家庭住址: </span>
-            <span>{{PatientInfoDetails.homeAddress}}</span>
+            <span>云南省曲靖市罗平县罗雄街道名称</span>
           </div>
           <div class="title">
             <span>家庭电话: </span>
-            <span>{{PatientInfoDetails.homeTelephone}}</span>
+            <span>15122228888</span>
           </div>
           <div class="title">
             <span>家庭邮编: </span>
-            <span>{{PatientInfoDetails.homeZipcode}}</span>
+            <span>655808</span>
           </div>
           <div class="title">
             <span>单位名称: </span>
-            <span>{{PatientInfoDetails.unitName}}</span>
+            <span>云南省曲靖市罗平县罗雄街道名称</span>
           </div>
           <div class="title">
             <span>单位电话: </span>
-            <span>{{PatientInfoDetails.unitTelephone}}</span>
+            <span>15122228888</span>
           </div>
           <div class="title">
             <span>单位邮编: </span>
-            <span>{{PatientInfoDetails.unitZipcode}}</span>
+            <span>655808</span>
           </div>
           <div class="title">
             <span>既&nbsp;&nbsp;往&nbsp;&nbsp;史: </span>
-            <span>{{PatientInfoDetails.previousHistory}}</span>
+            <span></span>
           </div>
           <div class="title">
             <span>家&nbsp;&nbsp;庭&nbsp;&nbsp;史: </span>
-            <span>{{PatientInfoDetails.familyHistory}}</span>
+            <span></span>
           </div>
           <div class="title">
             <span>过敏药物: </span>
-            <span>{{PatientInfoDetails.drugAllergy}}</span>
+            <span></span>
           </div>
         </div>
       </div>
@@ -270,9 +268,6 @@
   import {getMenuInfoByRoleId} from "@/common/getHttp";
 
   export default {
-    props: {
-      PatientInfoDetails: Object
-    },
     data() {
       return {
         list: [],

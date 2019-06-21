@@ -9,15 +9,10 @@
   import {mapState} from 'vuex'
   export default {
     mounted () {
-      this.$store.dispatch('getTestInfoDetail',() => {
-        this.$nextTick(() => {
-          this.$store.dispatch('getPatientInfoDetail')
-        })
-      })
+      this.$store.dispatch('getPatientInfoDetail')
     },
     computed: {
       ...mapState({
-        TestInfoDetail: state => state.particulars.TestInfoDetail,
         PatientInfoDetails: state => state.particulars.PatientInfoDetails
       })
     },

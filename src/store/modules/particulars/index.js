@@ -1,34 +1,51 @@
 /**
  * Created by Administrator on 2019/6/20.
  */
-import {RECEIVE_PATIENTINFODETAIL} from '../../mutation-types'
-import {reqGetPatientInfoDetail} from '../../../api'
+import {
+  RECEIVE_PATIENTINFODETAIL,
+  RECEIVE_TESTINFODETAIL
+} from '../../mutation-types'
+import {
+  reqGetPatientInfoDetail,
+  reqGetTestInfoDetail
+} from '../../../api'
 
 const state = {
-  PatientInfoDetails: {}
+  PatientInfoDetails: {},
+  TestInfoDetail: {}
 }
 
 const actions = {
-  async getPatientInfoDetail ({commit}) {
-    const patientId = 'ZY010000531294'
-    const result = await reqGetPatientInfoDetail(patientId)
-    console.log(result)
+  // 获取检验详细信息
+  async getTestInfoDetail ({commit}, cb) {
+    let testNo = "190509U340"
+    const result = await reqGetTestInfoDetail(testNo)
     if (result.code === 200) {
-      console.log(result.data)
-      commit(RECEIVE_PATIENTINFODETAIL,result.data)
+      commit(RECEIVE_TESTINFODETAIL, result.data)
+      cb && cb()
+    }
+  },
+
+  // 获取患者详情
+  async getPatientInfoDetail ({commit}) {
+    const patientId = state.TestInfoDetail.patientId
+    const result = await reqGetPatientInfoDetail(patientId)
+    if (result.code === 200) {
+      commit(RECEIVE_PATIENTINFODETAIL, result.data)
     }
   }
 }
 
 const mutations = {
+  [RECEIVE_TESTINFODETAIL] (state, TestInfoDetail) {
+    state.TestInfoDetail = TestInfoDetail
+  },
   [RECEIVE_PATIENTINFODETAIL] (state, PatientInfoDetails) {
     state.PatientInfoDetails = PatientInfoDetails
   }
 }
 
-const getters = {
-
-}
+const getters = {}
 
 export default {
   state,
